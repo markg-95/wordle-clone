@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
+  </head>
+  <body>
+	<script src="{{url_for('static', filename='index.js')}}"></script>
+    
+    
+    <div id="wrapper">
+        <p id="secret_word">{{ secret_word }}</p>
+        <p id="debug"></p>
+        <h1>Practice Wordle!!</h1>
+        
+    </div>
+  </body>
+</html>

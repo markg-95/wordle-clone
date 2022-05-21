@@ -1,0 +1,65 @@
+#wrapper {
+    display: grid;
+    
+}
+
+#secret_word {
+    justify-self: center;
+    /* visibility: hidden; */
+    color: yellow;
+    
+}
+
+h1 {
+    justify-self: center;
+}
+
+#debug {
+    justify-self: center;
+    color: rgb(255, 17, 42);
+    visibility: hidden;
+}
+
+.big_box {
+    display: grid;
+    /* background-color: rgb(45, 45, 45); */
+    grid-template-rows: auto auto auto auto auto;
+    max-width: 50%;
+    justify-self: center;
+    
+    
+}
+
+.small_box {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: rgb(45, 45, 45);
+    padding: 1rem;
+    border: 6px solid rgb(34,34,34);
+    
+}
+
+.letter_box {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background-color:rgb(78, 78, 78);
+    border: 1px solid rgb(123, 123, 123);
+    min-width: 50px;
+    min-height: 50px;
+    width: 50px;
+    height: 50px;
+    place-self: center;
+    padding: .5 rem;
+    border-radius: 5%;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+}
+
+html {
+    background-color: rgb(23,23,23);
+    color: rgb(123,123,123);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    
+}
