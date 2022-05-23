@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
+    <title>Practice Wordle</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css')}}">
   </head>
   <body>
@@ -12,10 +12,19 @@
     
     
     <div id="wrapper">
-        <p id="secret_word">{{ secret_word }}</p>
-        <p id="debug"></p>
-        <h1>Practice Wordle!!</h1>
-        
+        <div id="top">
+          <h1>Practice Wordle!!</h1>
+        </div>
+        <div id="left"></div>
+        <div id="right"></div>
+        <div id="center">
+          <p id="secret_word">{{ secret_word }}</p>
+          
+        </div>
+        <div id="bottom">
+          <p id="debug"></p>
+          <div id="virtual_keyboard"></div>  
+        </div>
     </div>
   </body>
 </html>

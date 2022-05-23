@@ -1,6 +1,29 @@
 #wrapper {
     display: grid;
-    
+    grid-template-areas: 
+    'TOP TOP TOP'
+        'LEFT CENTER RIGHT'
+        'BOTTOM BOTTOM BOTTOM';
+}
+#top{
+    justify-self: center;
+    display: grid;
+    justify-content: center;
+    grid-area: TOP;
+}
+#left{
+    grid-area: LEFT;
+}
+#center{
+    display: grid;
+    justify-content: center;
+    grid-area: CENTER;
+}
+#right{
+    grid-area: RIGHT;
+}
+#bottom{
+    grid-area: BOTTOM;
 }
 
 #secret_word {
@@ -10,21 +33,41 @@
     
 }
 
+#virtual_keyboard {
+    display: grid;
+    justify-content: center;
+    grid-template-rows: auto auto auto;
+    background-color: rgb(123, 123, 123);
+}
+
+.key_row {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.key_button {
+    font-size: larger;
+}
+
 h1 {
     justify-self: center;
+}
+
+.wrong_key{
+    background:rgb(45, 45, 45);
+    color:rgb(78, 78, 78);
 }
 
 #debug {
     justify-self: center;
     color: rgb(255, 17, 42);
-    visibility: hidden;
+    visibility: visible;
 }
 
 .big_box {
     display: grid;
     /* background-color: rgb(45, 45, 45); */
     grid-template-rows: auto auto auto auto auto;
-    max-width: 50%;
     justify-self: center;
     
     
@@ -34,7 +77,7 @@ h1 {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
     background-color: rgb(45, 45, 45);
-    padding: 1rem;
+    padding: .125rem;
     border: 6px solid rgb(34,34,34);
     
 }
